@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body style="background-image: url('{{ url_for('static', filename='wallpaperflare.com_wallpaper (copy 1).jpg') }}'); background-size: cover;">
+
+  <div class="container">
+    <h2>Welcome, {{ name }}</h2>
+    <p><strong>Student ID:</strong> {{ student_id }}</p>
+    <p><strong>Last Attendance Marked:</strong> {{ last_attendance }}</p>
+
+    <a href="https://meet.jit.si/YourMeetingRoom" class="join-button" target="_blank">Join Class Now</a>
+  </div>
+
+</body>
+</html>

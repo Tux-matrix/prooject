@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Virtual Class Attendance</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body style="background-image: url('{{ url_for('static', filename='wallpaperflare.com_wallpaper (copy 1).jpg') }}'); background-size: cover;">
+
+  <div class="container">
+    <h1>Virtual Class Attendance System</h1>
+    <div class="video-box">
+      <img id="video-feed" src="{{ url_for('video') }}" alt="Video Stream">
+    </div>
+    <p>Position your face in front of the camera to mark attendance.</p>
+  </div>
+  <script>
+    showNotification("Face matched successfully!", "green");
+</script>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+
+</body>
+</html>
